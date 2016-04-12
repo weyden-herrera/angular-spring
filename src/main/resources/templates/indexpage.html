@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout" >
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="./bower_components/bootstrap-css-only/css/bootstrap.min.css" />
+	<title>Insert title here</title>
+</head>
+<body>
+<div layout:fragment="content" class="container">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">User Registration</h3>
+	  </div>
+	  <div class="panel-body">
+	    <form id="myForm" class="form-horizontal">
+	    
+	    	<div class="form-group">
+			    <label for="inputFirstname" class="col-md-2 control-label">First Name</label>
+			    <div class="col-md-8">
+			      <input type="text" class="form-control" id="inputFirstname" placeholder="Firstname" />
+			    </div>
+			    <div class="col-md-2" ></div>
+		  	</div>
+		  	
+		  	<div class="form-group">
+			    <label for="inputLastname" class="col-md-2 control-label">Last Name</label>
+			    <div class="col-md-10">
+			      <input type="text" class="form-control" id="inputLastname" placeholder="Lastname" />
+			    </div>
+		  	</div>
+		  	
+		  	<div class="form-group">
+			    <label for="inputEmail" class="col-md-2 control-label">Email</label>
+			    <div class="col-md-10">
+			      <input type="email" class="form-control" id="inputEmail" placeholder="Email" />
+			    </div>
+		  	</div>
+		  	
+		  	<div class="form-group">
+			    <label for="inputUsername" class="col-md-2 control-label">Username</label>
+			    <div class="col-md-10">
+			      <input type="text" class="form-control" id="inputUsername" placeholder="Username" />
+			    </div>
+		  	</div>
+		  	
+		  	<div class="form-group">
+		  		<label class="col-md-2 control-label" for="inputDesc">Description</label>
+			  	<div class="col-md-10">
+			  		<textarea class="form-control" id="inputDesc" rows="3" placeholder="Description about your self"></textarea>
+			  	</div>
+		  	</div>
+		  	
+		  	<div class="form-group">
+		  		<label for="inputGender" class="col-md-2 control-label">Gender</label>
+		  		<div class="col-md-10">
+		  			<label class="radio-inline">
+					  <input type="radio" name="inputGender" id="genderMale" value="1" /> Male
+					</label>
+					<label class="radio-inline">
+					  <input type="radio" name="inputGender" id="genderFemale" value="2" /> Female
+					</label>
+		  		</div>
+		  	</div>
+		  	
+		  	<div class="form-group">
+		  		<div class="col-md-offset-2 col-md-10">
+		  			<div class="checkbox">
+		  				<label>
+		  					<input id="isActive" type="checkbox" /> Active
+		  				</label>
+		  				
+		  			</div>
+		  		</div>
+		  	</div>
+		  	
+		  	<div class="form-group">
+		  		<div class="col-md-offset-2 col-md-10">
+		  			<button type="button" class="btn btn-success">Register</button>
+		  		</div>
+		  	
+		  	</div>
+	    
+	    </form>
+	  </div>
+	</div>
+</div>
+</body>
+</html>
